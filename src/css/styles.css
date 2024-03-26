@@ -1,0 +1,279 @@
+
+:root {
+    --main-font: "Josefin Sans", sans-serif;
+    --light-yellow: #fff7bc;
+    --middle-yellow: #fee78a;
+    --orange: #f8a348;
+    --red: #e15244;
+    --green: #3a7b50;
+}
+
+* {
+    margin: 0;
+    font-family: var(--main-font);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Header Container */
+
+header {
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo-container {
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .logo-container img {
+    height: 50px;
+}
+
+header .search-container {
+    height: 40px;
+    width: 500px;
+}
+
+header .search-container #search-box {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--orange);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+
+header .profile-container {
+    background-color: var(--orange);
+    border-radius: 50px;
+    padding: 2px 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .profile-container img {
+    height: 50px;
+}
+
+/* Main Container */
+
+main {
+    height: auto;
+    /* background-color: blueviolet; */
+}
+
+main .buttons-menu-container {
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .buttons-menu-container img {
+    height: 30px;
+}
+
+main .buttons-menu-container .circle {
+    background-color: var(--orange);
+    border-radius: 50px;
+    padding: 4px 15px;
+    margin-inline: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Content Container */
+
+main .content-container {
+    height: 100%;
+}
+
+/* Priority Container */
+
+main .content-container .priority-container {
+    height: 300px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .content-container .priority-container .first-card, 
+main .content-container .priority-container .second-card {
+    height: auto;
+    width: 300px;
+    background-color: var(--middle-yellow);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+main .content-container .priority-container .second-card {
+    padding: 20px;
+}
+
+main .content-container .priority-container 
+.second-card .footer-second-card {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.know-more-button {
+    padding: 10px;
+    border: none;
+    background-color: var(--orange);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main .content-container .priority-container .first-card img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .content-container .priority-container .first-card .first-card-info {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Suggestions Container */
+main .content-container .suggestions-container {
+    height: 400px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .content-container .suggestions-container .first-suggestions-container img {
+    height: 170px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main .content-container .suggestions-container .first-suggestions-container {
+    height: 300px;
+    width: 650px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .content-container .suggestions-container 
+.first-suggestions-container .first-card,
+main .content-container .suggestions-container 
+.first-suggestions-container .second-card {
+    border: 1px solid black;
+    background-color: var(--middle-yellow);
+    border-radius: 10px;
+}
+
+main .content-container .suggestions-container 
+.first-suggestions-container .first-card .content-card,
+main .content-container .suggestions-container 
+.first-suggestions-container .second-card .content-card {
+    padding: 20px;
+}
+ 
+main .content-container .suggestions-container 
+.first-suggestions-container .footer-card {
+    margin-top: 20px;
+}
+
+main .content-container .suggestions-container 
+.first-suggestions-container .or-container p {
+    text-align: center;
+}
+
+main .content-container .suggestions-container 
+.first-suggestions-container .or-container img{
+    height: 50px;
+}
+
+main .content-container .suggestions-container 
+.first-suggestions-container .or-container .arrow-right {
+    transform: scaleX(-1) rotate(50deg);
+}
+
+main .content-container .suggestions-container 
+.first-suggestions-container .or-container .arrow-left  {
+    transform: scaleX(-1) rotate(220deg);
+}
+
+main .content-container .suggestions-container .second-suggestions-container {
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+main .content-container .suggestions-container .second-suggestions-container
+.first-card {
+    display: inline-flex;
+    background-color: var(--middle-yellow);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+main .content-container .suggestions-container .second-suggestions-container
+.first-card p {
+    padding: 20px;
+}
+
+main .content-container .suggestions-container .second-suggestions-container
+.first-card img {
+    height: 140px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+main .content-container .suggestions-container .second-suggestions-container
+.second-card {
+    background-color: var(--middle-yellow);
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+main .content-container .terms-container {
+    background-color: var(--middle-yellow);
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+
+/* Footer */
+footer {
+    height: auto;
+    padding: 30px 20px;
+}
+
+footer .service-container {
+    width: 260px;
+    background-color: var(--orange);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+footer .service-container a {
+    text-decoration: none;
+    color: #000;
+}
