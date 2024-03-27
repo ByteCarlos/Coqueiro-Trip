@@ -70,7 +70,6 @@ header .profile-container img {
 
 main {
     height: auto;
-    /* background-color: blueviolet; */
 }
 
 main .buttons-menu-container {
@@ -79,6 +78,7 @@ main .buttons-menu-container {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--middle-yellow);
 }
 
 main .buttons-menu-container img {
@@ -113,6 +113,10 @@ main .content-container .priority-container {
     align-items: center;
 }
 
+main .content-container .priority-container .first-card {
+    cursor: pointer;
+}
+
 main .content-container .priority-container .first-card, 
 main .content-container .priority-container .second-card {
     height: auto;
@@ -143,7 +147,7 @@ main .content-container .priority-container
 }
 
 main .content-container .priority-container .first-card img {
-    height: auto;
+    height: 200px;
     width: 100%;
     border-radius: 10px;
 }
@@ -159,6 +163,12 @@ main .content-container .suggestions-container {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 5%;
+}
+
+main .content-container .suggestions-container .first-suggestions-container .content-card .packet,
+main .content-container .suggestions-container .first-suggestions-container .content-card .check {
+    height: 20px;
 }
 
 main .content-container .suggestions-container .first-suggestions-container img {
@@ -236,6 +246,11 @@ main .content-container .suggestions-container .second-suggestions-container
 main .content-container .suggestions-container .second-suggestions-container
 .first-card p {
     padding: 20px;
+}
+
+main .content-container .suggestions-container .second-suggestions-container .first-card,
+main .content-container .suggestions-container .second-suggestions-container .second-card {
+    cursor: pointer;
 }
 
 main .content-container .suggestions-container .second-suggestions-container
